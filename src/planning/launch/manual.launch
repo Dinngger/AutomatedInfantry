@@ -1,0 +1,5 @@
+<launch>
+ <node name="hybrid_planning" pkg="hybrid_planning" type="hybrid_planning" output="screen"/>
+ <node name="map_server" pkg="map_server" type="map_server" args="$(find hybrid_planning)/maps/map.yaml" />
+ <node name="rviz" pkg="rviz" type="rviz" args="-d $(find hybrid_planning)/launch/config.rviz" />
+</launch>

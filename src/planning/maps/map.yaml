@@ -1,0 +1,6 @@
+image: map_slalom.png
+resolution: 1
+origin: [0.0, 0.0, 0.0]  # x y theta
+occupied_thresh: 0.9
+free_thresh: 0.5  # 0-128
+negate: 0
